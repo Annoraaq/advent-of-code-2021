@@ -3,9 +3,9 @@ const utils = require('../utils');
 const input = utils.getCharGridInput();
 
 const oxygenGeneratorRating = findNum(input, getMostCommonVal);
-const co2ScrubberRatingRating = findNum(input, getLeastCommonVal);
+const co2ScrubberRating = findNum(input, getLeastCommonVal);
 
-console.log(oxygenGeneratorRating * co2ScrubberRatingRating);
+console.log(oxygenGeneratorRating * co2ScrubberRating);
 
 // ---------------- helpers -----------------------
 
