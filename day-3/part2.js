@@ -33,6 +33,5 @@ function findNum(input, filterFn) {
 }
 
 function getLeastCommonVal(input, col) {
-  const mostCommonVal = getMostCommonVal(input, col);
-  return mostCommonVal === '1' ? '0' : '1';
+  return getMostCommonVal(input, col) === '1' ? '0' : '1';
 }
