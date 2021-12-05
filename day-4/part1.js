@@ -73,10 +73,3 @@ function readBoardsFromInput(input) {
   }
   return boards;
 }
-
-
-
-
-
-
-
