@@ -20,9 +20,7 @@ for (let line of input) {
 let dangerZoneCount = 0;
 for (const [x, yMap] of map) {
   for (const [y, count] of yMap) {
-    if (count >= 2) {
-      dangerZoneCount++;
-    }
+    if (count >= 2) dangerZoneCount++;
   }
 }
 
@@ -31,9 +29,7 @@ console.log(dangerZoneCount);
 // ---------------- helpers -----------------------
 
 function addToMap(x, y) {
-  if (!map.has(x)) {
-    map.set(x, new Map());
-  }
+  if (!map.has(x)) map.set(x, new Map());
   const oldVal = map.get(x).has(y) ? map.get(x).get(y) : 0;
   map.get(x).set(y, oldVal + 1);
 }
