@@ -5,8 +5,7 @@ const input = utils.getInput();
 const map = new Map();
 
 for (let line of input) {
-  const [lhs, , rhs] = line.split(' ');
-  const [[x1, y1], [x2, y2]] = [lhs.split(',').map(s => Number(s)), rhs.split(',').map(s => Number(s))];
+  const [[x1, y1], , [x2, y2]] = line.split(' ').map(s => s.split(',').map(s => Number(s)));
 
   const offset = Math.max(Math.abs(x1 - x2), Math.abs(y1 - y2));
   for (let off = 0; off <= offset; off++) {
