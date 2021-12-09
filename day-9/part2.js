@@ -13,12 +13,8 @@ for (let row = 0; row < map.length; row++) {
   }
 }
 
-basinSizes.sort((a, b) => a - b);
-const largestSizes = [];
-for (let i = 1; i <= 3; i++) {
-  largestSizes.push(basinSizes[basinSizes.length - i]);
-}
-console.log(largestSizes.reduce((prev, curr) => prev * curr));
+basinSizes.sort((a, b) => b - a);
+console.log(basinSizes[0] * basinSizes[1] * basinSizes[2]);
 
 // -------------------- helpers --------------------------
 
