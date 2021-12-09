@@ -7,6 +7,10 @@ const getCharGridInput = () => {
   return getInput().map(rowStr => [...rowStr]);
 }
 
+const getIntGridInput = () => {
+  return getInput().map(rowStr => [...rowStr].map(Number));
+}
+
 const getRawInput = () => {
   return fs.readFileSync('/dev/stdin').toString();
 }
@@ -19,5 +23,6 @@ module.exports = {
   getInput,
   getRawInput,
   getIntInput,
-  getCharGridInput
+  getCharGridInput,
+  getIntGridInput
 };
