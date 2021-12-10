@@ -26,5 +26,3 @@ function getNeighbours(row, col, map) {
 
   return neighbours;
 }
-
-
